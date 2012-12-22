@@ -22,7 +22,7 @@ def count_split_inversion(left, right, c):
         
 def main():
     count = [0] # a mutable data struct for counting the number of inversions
-    f = open('IntegerArray.txt')
+    f = open('IntegerArray.txt', 'r')
     line_list = f.readlines()
     int_list = [int(line.split()[0]) for line in line_list if line] 
     count_inversion(int_list, count)
