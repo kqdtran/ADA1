@@ -1,6 +1,9 @@
-/** Algorithms: Design and Analysis Part 1, Coursera
-    This file contains all of the 100,000 integers between 1 and 100,000 (inclusive) in some random order, with no integer repeated.
-    Your task is to compute the number of inversions in the file given, where the ith row of the file indicates the ith entry of an array. */
+/**
+ * Algorithms: Design and Analysis Part 1, Coursera
+ * This file contains all of the 100,000 integers between 1 and 100,000 (inclusive) in some random order, with no integer repeated.
+ * Your task is to compute the number of inversions in the file given, where the ith row of the file indicates the ith entry of an array.
+ * @author Khoa Tran
+ */
 
 import java.io.*;
 import java.util.Scanner;
@@ -45,7 +48,7 @@ public class inversion {
      * @param n the length of the array
      * @return the number of split inversions
      */
-    public static long countSplitInversion(int[] left, int[] right, int[] result) {
+    private static long countSplitInversion(int[] left, int[] right, int[] result) {
         int i = 0, j = 0, k = 0;
         long count = 0;
         while (i < left.length && j < right.length) {
