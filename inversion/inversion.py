@@ -1,4 +1,5 @@
 # Algorithms: Design and Analysis Part 1, Coursera
+# Problem 1: Counting the number of inversions in O(nlogn) time
 # This file contains all of the 100,000 integers between 1 and 100,000 (inclusive) in some random order, with no integer repeated. Your task is to compute the number of inversions in the file given, where the ith row of the file indicates the ith entry of an array.
 
 def count_inversion(li, c):
