@@ -3,6 +3,10 @@
 # This file contains all of the 100,000 integers between 1 and 100,000 (inclusive) in some random order, with no integer repeated. Your task is to compute the number of inversions in the file given, where the ith row of the file indicates the ith entry of an array.
 
 def count_inversion(li, c):
+    """Count the number of inversions in O(nlogn) time
+    li = the original list
+    c = a mutable data struct to store the number of inversions"""
+    
     length = len(li)
     if length < 2:
         return li
@@ -12,6 +16,11 @@ def count_inversion(li, c):
                                      count_inversion(li[middle:], c), c)
 
 def count_split_inversion(left, right, c):
+    """Count the number of split inversions, i.e. inversions that occur in both halves of the array.
+    left = the left sorted list
+    right = the right sorted list
+    c = a mutable data struct to store the number of inversions"""
+    
     result = []
     while left and right:
         curr = left if left[0] < right[0] else right
