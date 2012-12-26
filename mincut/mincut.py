@@ -23,7 +23,8 @@ def contract(vert1, vert2, G):
 
 def findMinCut(G):
     """Find the minimum cut in the graph G using Karger's algorithm
-    Note: The way I used to find the random edge here is not really uniformly distributed, but I believe it's good enough for the purpose of this problem.
+    Note: In what I used to find a random edge below, the probability of an edge is chosen is not
+    really uniformly distributed, but I think it's good enough for the purpose of this problem.
     G = the input graph, represented by a dictionary"""
     
     while len(G) > 2: # while there are more than two vertices in G
@@ -34,7 +35,8 @@ def findMinCut(G):
 
 def main():
     """Find the minimum cut in the graph G using Karger's algorithm after n*n*logn repeated trials.
-    The probability of failing to find a min cut after n*n*logn trials can be shown to be 1/n"""
+    The probability of failing to find a min cut after n*n*logn trials can be shown to be 1/n
+    In the code below, I actually ran it 1000 times only... because waiting for 200*200*log(200) iterations can be very long."""
     
     f = open('kargerMinCut.txt', 'r')
     line_list = f.readlines()
