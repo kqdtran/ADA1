@@ -1,13 +1,13 @@
-"""Algorithms: Design and Analysis Part 1, Coursera
-Week 4 Material: Computing Strongly Connected Components in Directed Graph using Depth First Search
-
-* Please note that this is a straightforward implementation with no optimization (e.g. recursive DFS);
-therefore, you may want to consider increasing the stack size if you want to run this code.
-To do so, on a Unix/Linux terminal, type: ulimit -s YOUR_NEW_STACK_SIZE_NUMBER"""
+# Algorithms: Design and Analysis Part 1, Coursera
+# Week 4 Material: Computing Strongly Connected Components in Directed Graph using Depth First Search
 
 import sys
 import time
+import resource
+
+# Increase recursion depth and stack size 
 sys.setrecursionlimit(100000)
+resource.setrlimit(resource.RLIMIT_STACK, (resource.RLIM_INFINITY, resource.RLIM_INFINITY))
 
 def make_graph(filename):
     """Make a graph and its transpose from the data stored inside the text file
