@@ -1,5 +1,5 @@
 # Algorithms: Design and Analysis Part 1, Coursera
-# Week 5 Problem: Dijkstra's Algorithm in Directed Graph
+# Week 5 Problem: Dijkstra's Shortest Path Algorithm in Directed Graph
 # Much of the source code adapted from http://code.activestate.com/recipes/119466-dijkstras-algorithm-for-shortest-paths/
 # Many thanks to David Eppstein, UC Irvine for the excellent source code and description
 
