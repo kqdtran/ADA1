@@ -74,7 +74,7 @@ def dijkstra(G, start, end=None):
     P = {}	          # dictionary of predecessors
     Q = priority_dict()   # est.dist. of non-final vert.
     
-    # initialize D and P
+    # initialize Q and P
     for vertex in G:
         Q[vertex] = float("inf")
         P[vertex] = None
