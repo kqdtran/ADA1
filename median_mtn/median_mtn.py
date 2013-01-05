@@ -1,5 +1,5 @@
 # Algorithms: Design and Analysis Part 1, Coursera
-# Week 6 Problem 2: Median Maintenance
+# Week 6 Problem B: Median Maintenance
 # Find the sum of all the medians of a stream of integers, arriving one by one, 
 # , each in O(log i) time, with i denoting the number of integers processed so far
 
