@@ -1,0 +1,4 @@
+# Algorithms: Design and Analysis Part 1, Coursera
+# Week 6 Problem 2: Median Maintenance
+# Find the current median of a stream of integers, arriving one by one, in O(log i) time,
+# with i denoting the number of integers processed so far
